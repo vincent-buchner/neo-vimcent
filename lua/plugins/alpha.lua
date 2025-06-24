@@ -6,11 +6,26 @@ return {
 
     startify.section.header.val = {
       [[ _   _            _   _ _                          ]],
-      [[ | \ | |          | | | (_)                        | |  ]],
-      [[ |  \| | ___  ___ | | | |_ _ __ ___   ___ ___ _ __ | |_  ]],
-      [[ | . ` |/ _ \/ _ \| | | | | '_ ` _ \ / __/ _ \ '_ \| __| ]], 
-      [[ | |\  |  __/ (_) \ \_/ / | | | | | | (_|  __/ | | | |_  ]],
-      [[ \_| \_/\___|\___/ \___/|_|_| |_| |_|\___\___|_| |_|\__| ]], 
+      [[ | \ | |          | | | (_)         ]],
+      [[ |  \| | ___  ___ | | | |_ _ __ ___  ]],
+      [[ | . ` |/ _ \/ _ \| | | | | '_ ` _ \ ]],
+      [[ | |\  |  __/ (_) \ \_/ / | | | | | |]],
+      [[ \_| \_/\___|\___/ \___/|_|_| |_| |_|]],
+      [[=========================================================]],
+      [[<LEADER>: Space]],
+      [[Ctrl + p: File Lookup]],
+      [[Ctrl + g: Grep]],
+      [[Ctrl + n: File Tree]],
+      [[<LEADER>gf: Format File]],
+      [[Ctrl + b: Scroll Up]],
+      [[Ctrl + f: Scroll Down]],
+      [[Ctrl + Space: Complete]],
+      [[Ctrl + e: Abort Complete]],
+      [[Enter: Complete AutoCorrect]],
+      [[gh: Learn More]],
+      [[gd: Defintions]],
+      [[<space>ca: Code Action]]
+
     }
 
     require("alpha").setup(
@@ -18,4 +33,3 @@ return {
     )
   end,
 }
-
