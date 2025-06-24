@@ -11,8 +11,21 @@ return {
 			require("mason-lspconfig").setup({
 				ensured_installed = { "lua_ls", "dockerls", "gopls", "html", "eslint", "pylsp", "ltex" },
 				automatic_installation = true,
+				automatic_enable = true
 			})
 		end,
+	},
+	{
+		"mason-org/mason-lspconfig.nvim",
+		opts = {
+			ensured_installed = { "lua_ls", "dockerls", "gopls", "html", "eslint", "pylsp", "ltex" },
+			automatic_installation = true,
+			automatic_enable = true,
+		},
+		dependencies = {
+			{ "mason-org/mason.nvim", opts = {} },
+			"neovim/nvim-lspconfig",
+		},
 	},
 	{
 		"neovim/nvim-lspconfig",
